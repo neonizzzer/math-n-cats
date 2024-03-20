@@ -1,0 +1,485 @@
+/*Common stuff*/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;500;900&family=Pangolin&display=swap");
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  padding: 0;
+  height: 180px;
+  background-color: #f5a609;
+  align-items: center;
+}
+
+footer {
+  font-family: "Rubik Bubbles", cursive;
+  text-decoration: none;
+  float: inline-end;
+  background-color: #f5a609;
+  height: 130px;
+  width: 100%;
+  color: #fbf8f3;
+  margin-top: 200px;
+  padding: 35px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.personal-link {
+  color: black;
+}
+
+#main-link {
+  width: 100%;
+  position: absolute;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+
+button {
+  border: none;
+  background-color: #f5a609;
+  text-align: center;
+  font-size: 30px;
+  color: #fbf8f3;
+  text-decoration: none;
+  padding: 20px 0px;
+  width: 200px;
+  font-family: "Rubik Bubbles", cursive;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Pangolin", cursive;
+  font-size: 30px;
+  color: #e19c3d;
+}
+
+.fullpage {
+  background-color: #f3cdde;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  width: 80%;
+  margin: 35px auto 0;
+  margin-bottom: 5px;
+  position: center;
+}
+
+.logo {
+  position: relative;
+  left: 30%;
+  right: -50%;
+  max-width: 40%;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+}
+
+.leftGroup {
+  width: 20%;
+  float: left;
+}
+
+.rightGroup {
+  width: 75%;
+  float: right;
+}
+
+.illustration {
+  max-width: 100%;
+  float: right;
+}
+
+mark {
+  background-color: #f5a609;
+  color: #fbf8f3;
+  margin: 0px 8px;
+}
+
+/*index*/
+
+.main-title {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  color: #d27d04;
+  font-family: "Rubik Bubbles", cursive;
+}
+
+.rowtext {
+  min-width: 80%;
+  max-height: 200px;
+}
+
+.catalog {
+  min-width: 80%;
+  text-align: center;
+  position: center;
+  display: inline-block;
+  margin: 20px 150px 50px;
+}
+
+.topic {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  background-color: #f5a609;
+  padding: 20px;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 6px #cd9027;
+}
+
+.topiclink {
+  text-decoration: none;
+}
+
+.topictitle {
+  font-family: "Pangolin", cursive;
+  font-size: 40px;
+  /*text-align: center;*/
+  color: #fbf8f3;
+}
+
+#topic_first:hover {
+  box-shadow: 0px 6px #d27d04;
+  top: 2px;
+}
+
+#topic_second:hover {
+  background-color: #f48aa8;
+  box-shadow: 0px 6px #f46aa8;
+  top: 2px;
+}
+
+#topic_third:hover {
+  background-color: #9fc274;
+  box-shadow: 0px 6px #90a959;
+  top: 2px;
+}
+
+#topic_fourth:hover {
+  background-color: #339999;
+  box-shadow: 0px 6px #028090;
+  top: 2px;
+}
+
+#topic_fifth:hover {
+  box-shadow: 0px 6px #d27d04;
+  top: 2px;
+}
+
+#topic_first:active, #topic_second:active, #topic_third:active, #topic_fourth:active, #topic_fifth:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+/*цвета каждой страницы*/
+
+.second {
+  background-color: #ff9fb2;
+}
+
+.second_text {
+  color: #f46aa8;
+}
+
+.third {
+  background-color: #9fc274;
+}
+
+.third_text {
+  color: #89c689;
+}
+
+.fourth {
+  background-color: #339999;
+}
+
+.fourth_text {
+  color: #4da6a6;
+}
+
+.lectureTitle {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  color: #d27d04;
+  font-family: "Rubik Bubbles", cursive;
+}
+
+.lectureTitle2 {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  color: #f277ae;
+  font-family: "Rubik Bubbles", cursive;
+}
+
+.lectureTitle3 {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  color: #90a959;
+  font-family: "Rubik Bubbles", cursive;
+}
+
+.lectureTitle4 {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  color: #028090;
+  font-family: "Rubik Bubbles", cursive;
+}
+
+.mark_second {
+  background-color: #f4a6be;
+  color: #fbf8f3;
+  margin: 0px 8px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.button_click {
+  border: none;
+  background-color: #f5a609;
+  text-align: center;
+  font-size: 30px;
+  color: #fbf8f3;
+  padding: 20px 0px;
+  width: 200px;
+  font-family: "Rubik Bubbles", cursive;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  outline: none;
+  display: block;
+  position: relative;
+  background: #fcad26;
+  font-weight: 300px;
+  text-transform: uppercase;
+  padding: 25px 35px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0px 6px #cd9027;
+  text-decoration: none;
+}
+
+.button_click:hover {
+  box-shadow: 0 4px #cd9027;
+  top: 2px;
+}
+
+#click_second {
+  background-color: #f48aa8;
+  box-shadow: 0px 6px #f46aa8;
+}
+
+#click_second:hover {
+  background-color: #f48aa8;
+  box-shadow: 0px 4px #f46aa8;
+  top: 2px;
+}
+
+#click_third {
+  background-color: #9fc274;
+  box-shadow: 0px 6px #90a959;
+}
+
+#click_third:hover {
+  background-color: #9fc274;
+  box-shadow: 0px 4px #90a959;
+  top: 2px;
+}
+
+#click_fourth {
+  background-color: #339999;
+  box-shadow: 0px 6px #028090;
+}
+
+#click_fourth:hover {
+  background-color: #339999;
+  box-shadow: 0px 4px #028090;
+  top: 2px;
+}
+
+#click_second:active, #click_third:active, #click_fourth:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+.button_click:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+.error404 {
+  text-align: center;
+  font-size: 70px;
+  color: #d27d04;
+  font-family: "Rubik Bubbles", cursive;
+  margin-top: 200px;
+}
+
+/*css к виртуальной клавиатуре, не писать под ним, оставить его в самом низу !!! в работе*/
+
+#task_area {
+  position: center;
+}
+
+.task {
+  width: 50%;
+}
+
+.keyboard {
+  position: center;
+}
+
+.key {
+  border: 2px;
+  width: 30%;
+  margin-bottom: 4px;
+}
+
+.keyword {
+  text-align: center;
+  width: 61.5%;
+}
+
+.key,
+.keyword {
+  background-color: #ffc457;
+}
+
+/*css к квизу, тоже держать в самом низу*/
+
+.questionFirst {
+  font-family: "Pangolin", cursive;
+  font-size: 40px;
+  color: #e19c3d;
+  margin-bottom: 15px;
+}
+
+.questionSecond {
+  font-family: "Pangolin", cursive;
+  font-size: 40px;
+  color: #f46aa8;
+  margin-bottom: 15px;
+}
+
+.questionThird {
+  font-family: "Pangolin", cursive;
+  font-size: 40px;
+  color: #89c689;
+  margin-bottom: 15px;
+}
+
+.questionFourth {
+  font-family: "Pangolin", cursive;
+  font-size: 40px;
+  color: #4da6a6;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 25%;
+  font-size: 30px;
+  font-family: "Pangolin", cursive;
+  padding: 5px;
+  margin-top: 0;
+}
+
+.answerFirst:focus {
+  background-color: #ffc457;
+  border: 5px #d27d04;
+  color: #fbf8f3;
+}
+
+.answerSecond:focus {
+  background-color: #ff9fb2;
+  border: 5px #d27d04;
+  color: #fbf8f3;
+}
+
+.answerThird:focus {
+  background-color: #9fc274;
+  border: 5px #d27d04;
+  color: #fbf8f3;
+}
+
+.answerFourth:focus {
+  background-color: #339999;
+  border: 5px #d27d04;
+  color: #fbf8f3;
+}
+
+#checker,
+#checker2,
+#checker3,
+#checker4 {
+  margin: 50px;
+  position: center;
+  text-align: center;
+  width: 250px;
+  margin-left: 35%;
+}
+
+#checker2 {
+  background-color: #f48aa8;
+  box-shadow: 0px 6px #f46aa8;
+}
+
+#checker3 {
+  background-color: #9fc274;
+  box-shadow: 0px 6px #90a959;
+}
+
+#checker4 {
+  background-color: #339999;
+  box-shadow: 0px 6px #90a959;
+}
+
+.correct {
+  background-color: #53e4b0;
+}
+
+.incorrect {
+  background-color: #e45387;
+}
+
+.column {
+  display: table-cell;
+  padding: 10px;
+  width: 45%;
+  text-align: left;
+}
